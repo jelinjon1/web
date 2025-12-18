@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Videophreak";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Videophreak"), url("/fonts/VIDEOPHREAK.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Frutiger";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Frutiger"), url("/fonts/Frutiger.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Frutiger Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Frutiger Bold"), url("/fonts/Frutiger_bold.woff") format("woff");
+}
+
+* {
+    /* font-family: "Videophreak", sans-serif; */
+    /* font-family: "Videophreak", sans-serif; */
+    font-family: "Frutiger", sans-serif;
+
+    */ h1 {
+        font-weight: bold;
+    }
+
+    article {
+        font-size: large;
+    }
+}
