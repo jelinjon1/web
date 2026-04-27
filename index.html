@@ -9,30 +9,32 @@
     </head>
     <body>
         <div class="center-wrapper">
-            <div class="tab-wrapper">
-                <button class="tablink" onclick="openPage('Home', this, 'red')">
-                    Home
-                </button>
-                <button
-                    class="tablink"
-                    onclick="openPage('News', this, 'green')"
-                    id="defaultOpen"
-                >
-                    News
-                </button>
-                <button
-                    class="tablink"
-                    onclick="openPage('Contact', this, 'blue')"
-                >
-                    Contact
-                </button>
-                <button
-                    class="tablink"
-                    onclick="openPage('About', this, 'orange')"
-                >
-                    About
-                </button>
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <div class="logo">logo</div>
+                    <div class="logo-label-wrapper">
+                        <p>2Advanced</p>
+                        <p>Studios</p>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <div>->2A.V3.2026 // Expansions</div>
+                    <!-- onclick="openPage('Home', this, 'red')" -->
+                    <button class="tablink">Home</button>
+                    <button class="tablink" id="defaultOpen">News</button>
+                    <!-- onclick="openPage('News', this, 'green')" -->
+                    <button
+                        class="tablink"
+                        onclick="openPage('Contact', this, 'blue')"
+                    >
+                        Contact
+                    </button>
+                    <!-- onclick="openPage('About', this, 'orange')" -->
+                    <button class="tablink">About</button>
+                </div>
             </div>
+
+            <div class="center-content-wrapper"></div>
 
             <div id="Home" class="tabcontent">
                 <h3>Home</h3>

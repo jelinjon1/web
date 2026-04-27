@@ -18,6 +18,15 @@
 
 html {
     height: 100%;
+
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
 }
 
 body {
@@ -49,23 +58,81 @@ body {
     }
 }
 
-.tab-wrapper {
-    border: white solid 1px;
-}
-.tablink {
-    background-color: #637795;
-    text-transform: uppercase;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
+.header-wrapper {
+    padding: 10px 10px;
 
-    &:hover {
-        background-color: #253b5c;
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            align-content: center;
+            color: #384968;
+
+            /* TODO remove placeholder logo */
+            corner-shape: notch;
+            border-radius: 90px;
+        }
+
+        .logo-label-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-left: 16px;
+            align-items: start;
+
+            p {
+                padding: 0px;
+                text-transform: uppercase;
+                color: white;
+                float: left;
+                border: none;
+                outline: none;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .tab-wrapper {
+        border: #384968 solid 2px;
+        border-style: groove;
+        display: flex;
+
+        div,
+        .tablink {
+            /* background-color: #637795; */
+            background-color: #384968;
+            text-transform: uppercase;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            font-size: 17px;
+
+            /* border-style: ridge; */
+        }
+
+        div {
+            padding: 8px 8px;
+            width: 320px;
+            border: rgb(33, 33, 33) solid 2px;
+        }
+
+        .tablink {
+            cursor: pointer;
+            padding: 8px 16px;
+            /* width: 25%; */
+            flex-grow: 4;
+            border-top: rgb(33, 33, 33) solid 2px;
+            border-bottom: rgb(33, 33, 33) solid 2px;
+            border-right: rgb(33, 33, 33) solid 2px;
+
+            &:hover {
+                background-color: #253b5c;
+            }
+        }
     }
 }
 
@@ -74,4 +141,9 @@ body {
     display: none;
     padding: 100px 20px;
     height: 100%;
+}
+
+.center-content-wrapper {
+    background-color: #223457;
+    height: 400px;
 }

@@ -2,27 +2,40 @@
     font-family: "Videophreak";
     font-style: normal;
     font-weight: normal;
-    src: local("Videophreak"), url("/fonts/VIDEOPHREAK.woff") format("woff");
+    src:
+        local("Videophreak"),
+        url("/fonts/VIDEOPHREAK.woff") format("woff");
 }
 
 @font-face {
     font-family: "Frutiger";
     font-style: normal;
     font-weight: normal;
-    src: local("Frutiger"), url("/fonts/Frutiger.woff") format("woff");
+    src:
+        local("Frutiger"),
+        url("/fonts/Frutiger.woff") format("woff");
 }
 
 @font-face {
     font-family: "Frutiger Bold";
     font-style: normal;
     font-weight: normal;
-    src: local("Frutiger Bold"), url("/fonts/Frutiger_bold.woff") format("woff");
+    src:
+        local("Frutiger Bold"),
+        url("/fonts/Frutiger_bold.woff") format("woff");
 }
 
 * {
     /* font-family: "Videophreak", sans-serif; */
-    /* font-family: "Videophreak", sans-serif; */
-    font-family: "Frutiger", sans-serif;
+    /* font-family: "Frutiger", sans-serif; */
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
 
     */ h1 {
         font-weight: bold;
