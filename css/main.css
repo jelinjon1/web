@@ -136,6 +136,42 @@ body {
     }
 }
 
+@media (max-width: 980px) {
+    .header-wrapper {
+        .tab-wrapper {
+            div {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 726px) {
+    .header-wrapper {
+        .tab-wrapper {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .header-wrapper {
+        .logo-wrapper {
+            .logo-label-wrapper {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .tab-wrapper {
+            div,
+            .tablink {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
 .tabcontent {
     color: white;
     display: none;
